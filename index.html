@@ -1,27 +1,86 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
+
 <html>
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-<title>Chirin Safi</title>
+    <meta charset="utf-8">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="normalize.css">
+
+    <style>
+        .parallax {
+    /* The image used */
+    background-image: url("http://www.space.dtu.dk/gimage.ashx?i=VHJ1ZV9ffHxfX2h0dHA6Ly93d3cuc3BhY2UuZHR1LmRrLy8tL21lZGlhL0luc3RpdHV0dGVyL1NwYWNlL0ZvcnNpZGUvRm9yc2lkZTIwMTMuYXNoeF9ffHxfXzcwMF9ffHxfXzM1MF9ffHxfX1RydWVfX3x8X19GYWxzZV9ffHxfX0ZhbHNlX198fF9fMF9ffHxfX19ffHxfXzA_:_3d");
+
+    /* Set a specific height */
+    min-height: 1000px;
+            
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+        a {
+            text-decoration: none;
+            color: darkblue;
+        }
+        body {
+            margin:0;
+        }
+        main {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0;
+        }
+        header h1 {
+            text-align: center;
+            color: darkblue;
+        }
+        header {
+            background-color: white;
+         
+        }
+        ul {
+            display: inline;
+            padding-left: 0;
+        }
+        ul, li {
+            display: inline-block;
+        }
+        nav, footer {
+            text-align: center;
+        }
+
+    </style>
 </head>
-<body ng-app="myPortfolio">
-<header ng-controller = "HomeController">
-<h1>{{title}}</h1>
+<body>
+<header>
+    <h1><a href="Index.html">Chirin Safi</a></h1> <!--lägger vi länken utanför elementet, här h1, blir hela elementet en länk-->
+    <nav> <!--förtydligar att detta är navigation-->
+        <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="#">Överraskning</a></li>
+            <li><a href="#">Kontakt</a></li>
+
+        </ul>
+    </nav>
 </header>
 <main>
-<h3>Kompetenser:</h3>
-<ol>
-<li>C#</li>
-<li>JavaScript</li>
-<li>Visual Studio</li>
-<li>HTML5</li>
-<li>CSS</li>
-<li>SQL</li>
-<li>Microsoft SQL-server</li>
-<li>Razor</li>
-</ol>
-</main>
-<footer></footer>
-<body>
+    
+<div class="parallax"></div>
 
+<div style="height:500px;background-color:white;font-size:36px">
+
+
+
+    <h2>Hur man ska konsumera bananer som programmerare</h2>
+    <p>Minions ipsum tulaliloo pepete hana dul sae poulet tikka masala la bodaaa poopayee la bodaaa wiiiii pepete. Butt me want bananaaa! Poopayee jiji la bodaaa la bodaaa. Potatoooo baboiii hana dul sae uuuhhh poulet tikka masala la bodaaa bananaaaa poopayee wiiiii. Bappleees ti aamoo! Tatata bala tu wiiiii daa bee do bee do bee do hahaha bappleees tank yuuu! Baboiii underweaaar hahaha daa jeje. Baboiii aaaaaah potatoooo butt uuuhhh bananaaaa po kass potatoooo underweaaar. Uuuhhh tatata bala tu poulet tikka masala bee do bee do bee do gelatooo hana dul sae hana dul sae tatata bala tu belloo! Potatoooo bappleees.</p>
+    <img src="data:image/jpeg;base64,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">
+</div>
+    </main>
+<footer>
+    <p>&hearts; Chirin Safi</p>
+</footer>
+</body>
 </html>
